@@ -5,6 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// Fix for GitHub Pages 404 redirect
+const redirect = sessionStorage.redirect;
+if (redirect) {
+  delete sessionStorage.redirect;
+  window.history.replaceState(null, null, redirect);
+}
 root.render(
   <React.StrictMode>
     <App />
