@@ -1,0 +1,228 @@
+:root {
+  --sidebar-width: 72px;
+  --sidebar-padding: 20px 0;
+  --icon-size: 1.3rem;
+  --transition-speed: 0.3s;
+  --sidebar-bg: rgba(255, 255, 255, 0.04);
+  --sidebar-border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Sidebar layout */
+.sidebar {
+  width: var(--sidebar-width);
+  height: 84%;
+  min-height: 500px;
+  margin: 20px 0;
+  background: var(--sidebar-bg);
+  backdrop-filter: blur(20px);
+  border: var(--sidebar-border);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--sidebar-padding);
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 1000;
+  transition: all var(--transition-speed) ease;
+  overflow: hidden;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Icons column */
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Default icon-label */
+.icon-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.65rem;
+  color: white;
+  gap: 4px;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* Make svg inherit current color */
+.icon-label svg {
+  font-size: var(--icon-size);
+  color: currentColor;
+  transition: transform var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+/* Hover effect (scale + violet color) for all items */
+.icon-label:hover svg,
+.icon-label:focus svg {
+  transform: scale(1.15);
+  color: #9b5de5;
+}
+
+/* Active (route) item: pink */
+.icon-label.active {
+  color: #9b5de5;
+  font-weight: 600;
+}
+
+.icon-label.active svg {
+  color: #9b5de5;
+}
+
+/* Ensure active stays pink on hover/focus */
+.icon-label.active:hover,
+.icon-label.active:focus {
+  color: #9b5de5;
+}
+
+/* nav footer */
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.rc {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 1439px) {
+  .sidebar {
+    width: 0;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-20px);
+    top: 80px;
+    overflow: visible;
+  }
+
+  .sidebar.open {
+    width: var(--sidebar-width);
+    height: 80%;
+    padding: var(--sidebar-padding);
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .hamburger-btn {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: white;
+    z-index: 1100;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+  }
+}
+
+/* Landscape Mobile */
+@media (max-width: 1439px) and (orientation: landscape) {
+  .sidebar {
+    height: 90vh;
+    top: 5vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+  }
+  .sidebar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .sidebar.open {
+    height: 90vh;
+  }
+
+  .icons {
+    gap: 12px;
+  }
+}
+
+/* Overlay */
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.3);
+  backdrop-filter: blur(6px);
+  z-index: 900;
+}
+
+/* Music Button */
+.music-toggle {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2c3e50;
+  color: #ecf0f1;
+  margin: 10px auto;
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+}
+
+.music-toggle:hover {
+  background: #34495e;
+  transform: scale(1.1);
+}
+
+.music-toggle.active {
+  background: #9b5de5;
+  box-shadow: 0 0 15px #9b5de5, 0 0 30px rgba(155, 93, 229, 0.5);
+  animation: musicPulse 2s infinite;
+}
+
+@keyframes musicPulse {
+  0% { box-shadow: 0 0 0 0 rgba(155, 93, 229, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(155, 93, 229, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(155, 93, 229, 0); }
+}

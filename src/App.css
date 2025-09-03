@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+/* Google Fonts import — consider moving to index.html for performance */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Exo+2&display=swap');
+
+body {
+  cursor: none !important;
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+  height: max-content;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Hide scrollbar for WebKit browsers */
+*::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body.noselect, .noselect {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(ellipse at top, #0f0f1a, #050510);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+*{  
+  cursor: none !important;
 }

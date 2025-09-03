@@ -1,0 +1,114 @@
+/* styles/Skill.css */
+
+.dark-skill-page {
+    min-height: 100vh;
+    color: #f8f8f8;
+    padding: 20px 20px 20px 20px;
+    font-family: "Segoe UI", sans-serif;
+    text-align: center;
+  }
+  
+  
+  .dark-skill-legend {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #a1a1aa;
+  }
+  
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  /* Grid layout */
+  .dark-skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Glassmorphism card */
+  .dark-skill-category {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(100, 100, 255, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .dark-skill-category:hover {
+    transform: translateY(-6px);
+  }
+  
+  .dark-skill-category h2 {
+    font-size: 1.4rem;
+    color: #e5e5e5;
+    margin-bottom: 20px;
+  }
+  
+  /* Skills inside category */
+  .dark-skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .dark-skill-item {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Hover effects */
+  .dark-skill-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 0 0 5px #fff;
+  }
+  
+  /* Neon Borders */
+  .beginner {
+    border: 2px solid #facc15;
+    box-shadow: 0 0 10px #facc15;
+  }
+  
+  .intermediate {
+    border: 2px solid #60a5fa;
+    box-shadow: 0 0 10px #60a5fa;
+  }
+  
+  .advanced {
+    border: 2px solid #34d399;
+    box-shadow: 0 0 10px #34d399;
+  }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
+    .dark-skill-title {
+      font-size: 2.2rem;
+    }
+  }
+  
+
+

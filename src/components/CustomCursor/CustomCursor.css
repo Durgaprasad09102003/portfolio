@@ -1,0 +1,23 @@
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: rgba(168, 85, 247, 0.12); /* light purple fill */
+    border: 2px solid #a855f7; /* neon purple border */
+    box-shadow: 0 0 12px 5px rgba(168, 85, 247, 0.4); /* outer glow */
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.12s ease-out, box-shadow 0.3s ease;
+  }
+  
+  /* Optional: hide on mobile */
+  @media (max-width: 768px) {
+    .custom-cursor {
+      display: none;
+    }
+  }
+  

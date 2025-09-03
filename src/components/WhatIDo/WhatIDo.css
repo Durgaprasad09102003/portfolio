@@ -1,0 +1,114 @@
+.what-i-do {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .section-header .dot {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #ffe066;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+    color: 	#ffe066;
+  }
+  
+  .section-header p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: none;
+    border-left: none;
+  }
+  
+  .service-card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease;
+  }
+  
+  .service-card:nth-child(3n) {
+    border-right: none;
+  }
+  .service-card:nth-child(n+4) {
+    border-bottom: none;
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffe066;
+    transition: transform 0.2s ease;
+  }
+  
+  .service-card:hover .icon {
+    transform: scale(1.1);
+  }
+  
+  .service-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .service-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    max-width: 280px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .service-card:nth-child(3n) {
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  
+    .service-card:nth-child(2n) {
+      border-right: none;
+    }
+  
+    .service-card:nth-child(n+5) {
+      border-bottom: none;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .service-card {
+      border-right: none !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  
+    .service-card:last-child {
+      border-bottom: none;
+    }
+  }
+  
