@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.727fa548.css",
-    "main.js": "/portfolio/static/js/main.27dee3af.js",
+    "main.js": "/portfolio/static/js/main.f2ad455c.js",
     "static/js/453.ad7768ec.chunk.js": "/portfolio/static/js/453.ad7768ec.chunk.js",
     "static/media/HyderabadHitechCity.jpg": "/portfolio/static/media/HyderabadHitechCity.41f10f01100000749fe7.jpg",
     "static/media/Firestorm.mp3": "/portfolio/static/media/Firestorm.988109f6b8aaec0d081d.mp3",
@@ -21,11 +21,11 @@
     "static/media/ChatApplicationProject.png": "/portfolio/static/media/ChatApplicationProject.beca48d3f6aa9db50ca0.png",
     "index.html": "/portfolio/index.html",
     "main.727fa548.css.map": "/portfolio/static/css/main.727fa548.css.map",
-    "main.27dee3af.js.map": "/portfolio/static/js/main.27dee3af.js.map",
+    "main.f2ad455c.js.map": "/portfolio/static/js/main.f2ad455c.js.map",
     "453.ad7768ec.chunk.js.map": "/portfolio/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.727fa548.css",
-    "static/js/main.27dee3af.js"
+    "static/js/main.f2ad455c.js"
   ]
 }
