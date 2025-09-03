@@ -9,7 +9,7 @@ import AlbumPage from "./pages/AlbumPage/AlbumPage";
 
 export default function App() {
   return (
-    <Router basename="/portfolio">  {/* Add basename here */}
+    <Router>  {/* Add basename here */}
       <CustomCursor /> 
       <Navbar />
       <Routes>
