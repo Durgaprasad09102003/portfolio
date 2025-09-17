@@ -45,10 +45,10 @@ const ProjectCard = ({ title, description, tags, githubLink, demoLink, image }) 
 const ProjectSection = () => {
   const projectsData = [
     {
-      title: "WanderTrek A Travel Website Using MERN STACK",
+      title: "#2026 Dream Project(WanderTrek) ",
       description: "WanderTrek is a MERN stack travel website in progress, designed with multiple features to make trip planning seamless and engaging.",
       tags: ["MERN STACK"],
-      githubLink: "https://github.com/example/startup-landing",
+      githubLink: "#",
       demoLink: "#",
       image: assets.WanderTrekProject,
     },
@@ -57,7 +57,7 @@ const ProjectSection = () => {
       description: "A basic chat application built with the MERN stack, featuring real-time messaging and user authentication.",
       tags: ["MERN STACK"],
       githubLink: "https://github.com/Durgaprasad09102003/FSI-CHATAPP/tree/main/Chat%20App",
-      demoLink: "#",
+      demoLink: "https://github.com/Durgaprasad09102003/FSI-CHATAPP/tree/main/Chat%20App",
       image: assets.ChatApplicationproject
     },
     {

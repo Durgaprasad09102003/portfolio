@@ -44,10 +44,10 @@ const ProjectPage = () => {
   const [loading, setLoading] = useState(true);
   const projectsData = [
     {
-      title: "WanderTrek A Travel Website Using MERN STACK",
+      title: "#2026 Dream Project(WanderTrek) ",
       description: "WanderTrek is a MERN stack travel website in progress, designed with multiple features to make trip planning seamless and engaging.",
       tags: ["MERN STACK"],
-      githubLink: "https://github.com/example/startup-landing",
+      githubLink: "#",
       demoLink: "#",
       image: assets.WanderTrekProject,
     },
