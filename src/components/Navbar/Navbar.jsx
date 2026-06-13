@@ -11,7 +11,6 @@ import {
   FaBars,
   FaTimes,
   FaImages,
-  FaFileVideo,
 } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
