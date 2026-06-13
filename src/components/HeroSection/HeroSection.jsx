@@ -10,7 +10,7 @@ export default function HeroSection() {
   const contentRef = useRef();
   const glowRef = useRef();
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
-  const roles = ["MERN STACK DEVELOPER", "UI/UX DESIGNER"];
+  const roles = ["MERN STACK DEVELOPER", ".NET ANGULAR DEVELOPER", "UI/UX DESIGNER"];
   const roleRef = useRef();
 
   // Role cycling animation

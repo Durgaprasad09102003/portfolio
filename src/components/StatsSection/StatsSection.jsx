@@ -8,7 +8,7 @@ const StatsSection = () => {
   const stats = [
     { number: 6, label: 'Projects Completed' },
     { number: '500+', label: 'Linkedin Followers' },
-    { number: 'Fresher', label: 'Years Experience' },
+    { number: '1', label: 'Years Experience' },
     { number: 100, label: 'Cups of Coffee ☕' },
   ];
 

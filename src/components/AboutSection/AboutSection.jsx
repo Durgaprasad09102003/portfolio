@@ -21,16 +21,16 @@ const AboutSection = () => {
 
         workExperience() {
           return [
-            { "03/11/2025-present": "Software Engineer Trainee | Infosys Mysore (Campus Placement)" },
+            { "03/11/2025-present": "Infosys Ltd (Campus Placement)" },
             { "05/08/2024-23/11/2024": "Full-stack Developer(MERN STACK)/Intern at BrainOVision" }
           ];
         }
 
         skills() {
           return [
-            "C Programming Language", "Python", "Java",
-            "HTML", "CSS", "Java Script", "React JS",
-            "Node Js", "Mongo DB", "Express JS",
+            "C", "Python", "Java",
+            "HTML", "CSS", "Java Script", "React JS","Angular",
+            ".NET", "Node Js", "Mongo DB", "Express JS",
             "PhotoShop", "PremierePro", "github"
           ];
         }
@@ -142,7 +142,7 @@ const AboutSection = () => {
   <br />
   {'        '}<span className="keyword">return</span> [
   <br />
-  {'            '}{'{'} "03/11/2025-present": "<span className="string">Software Engineer Trainee | Infosys Mysore (Campus Placement)</span>" {'}'}
+  {'            '}{'{'} "03/11/2025-present": "<span className="string">Infosys Ltd (Campus Placement)</span>" {'}'}
   <br />
   {'            '}{'{'} "05/08/2024-23/11/2024": "<span className="string">Full-stack Developer(MERN STACK)/Intern at BrainOVision</span>" {'},'}
   <br />
@@ -154,9 +154,9 @@ const AboutSection = () => {
   <br />
   {'        '}<span className="keyword">return</span> [
   <br />
-  {'            '}"C Programming Language", "Python", "Java",<br />
-  {'            '}"HTML", "CSS", "Java Script", "React JS",<br />
-  {'            '}"Node Js", "Mongo DB", "Express JS",<br />
+  {'            '}"C", "Python", "Java",<br />
+  {'            '}"HTML", "CSS", "Java Script", "React JS", "Angular"<br />
+  {'            '}".NET", "Node Js", "Mongo DB", "Express JS",<br />
   {'            '}"PhotoShop", "PremierePro", "github"
   <br />
   {'        '}];

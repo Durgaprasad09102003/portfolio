@@ -28,7 +28,7 @@ const ContactSection = () => {
     
     // EmailJS integration
     emailjs.send(
-      'service_vorod5k',
+      'service_4u1539n',
       'template_6kvmjyf',
       {
         from_name: formData.name,

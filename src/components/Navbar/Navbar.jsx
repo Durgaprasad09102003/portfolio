@@ -21,7 +21,7 @@ import assets from "../../assets/assets";
 
 const Navbar = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [audio] = useState(new Audio(assets.firestorm));
+  const [audio] = useState(new Audio(assets.DPaudio));
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1440);
   const sidebarRef = useRef(null);

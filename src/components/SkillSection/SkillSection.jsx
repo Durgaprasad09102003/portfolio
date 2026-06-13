@@ -10,12 +10,14 @@ const skillsData = [
       { name: "CSS", level: "advanced" },
       { name: "JavaScript", level: "advanced" },
       { name: "React", level: "intermediate" },
+      { name: "Angular", level: "intermediate" },
       { name: "Tailwind CSS", level: "intermediate" },
     ],
   },
   {
     category: "Backend",
     skills: [
+      { name: ".NET", level: "beginner" },
       { name: "Node.js", level: "intermediate" },
       { name: "Express.js", level: "intermediate" },
       { name: "PHP", level: "beginner" },

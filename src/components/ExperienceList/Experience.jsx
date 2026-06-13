@@ -4,6 +4,14 @@ import { FaBriefcase, FaEye, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const experience = [
   {
+    type: 'Full-Time',
+    year: '11/2025 - present',
+    course: 'System Engineer',
+    company: 'Infosys Limited',
+    projects: ['Contributed to a client project for Charles Schwab', 'LearnMore: A Learning Platform'],
+    details: 'My journey with Infosys has been an inspiring and valuable experience that helped me grow both technically and professionally. During this journey, I improved my skills, gained exposure to real-time industry practices, and learned the importance of teamwork, communication, and continuous learning in the IT industry. The experience motivated me to explore modern technologies more deeply and strengthened my confidence to build a successful career in the tech field.',
+  },
+  {
     type: 'Internship',
     year: '08/2024 - 11/2024',
     course: 'MERN STACK DEVELOPER',
@@ -59,7 +67,7 @@ const Experience = () => {
                     <h4>{item.course}</h4>
                     <p><strong>Type:</strong> {item.type}</p>
                     <p><strong>Company:</strong> {item.company}</p>
-                    {item.type === 'Internship' && (
+                    {(
                       <div>
                         <p><strong>Projects:</strong></p>
                         <ul>

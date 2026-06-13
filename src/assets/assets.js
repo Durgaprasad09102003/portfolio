@@ -1,4 +1,4 @@
-import firestorm from './audio/Firestorm.mp3';
+import DPaudio from './audio/DPFav.mp3';
 
 import DPprofile from './images/DPprofile.jpg';
 import HomeBG from './images/HomeBG.png';
@@ -14,7 +14,7 @@ import Resume from './doc/DURGAPRASAD PILLI.pdf'
 
 
 const assets = {
-  firestorm,
+  DPaudio,
   DPprofile,
   HomeBG,
   Resume,
