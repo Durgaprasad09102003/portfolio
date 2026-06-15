@@ -8,73 +8,158 @@ import album from "../../assets/album";
 gsap.registerPlugin(ScrollTrigger);
 
 const albums = [
-    {
-      type: "image",
-      src: album.MyFirstFlight,
-      title: "My First Flight – Sky View",
-      tags: ["Sky", "Clouds", "Travel"],
-      category: "Travel",
-      date: "2023-04-30",
-      location: "Above the Clouds"
-    },
-    {
-      type: "image",
-      src: album.Durgaprasad1,
-      title: "Me in a Beach Vibe",
-      tags: ["Ocean", "Water", "Seascape"],
-      category: "Nature",
-      date: "2024-10-04",
-      location: "Vizag Beach, india"
-    },
-    /*
-    {
-      type: "video",
-      src: "https://player.vimeo.com/video/370756449?h=da64b90a60",
-      thumbnail: "https://i.vimeocdn.com/video/830902733_640.jpg",
-      title: "Northern Lights",
-      tags: ["Aurora", "Night", "Sky"],
-      category: "Astro",
-      date: "2023-03-10",
-      location: "Iceland"
-    },*/
-    {
-      type: "image",
-      src: album.HyderabadHitechCity,
-      title: "Hyderabad Modern View",
-      tags: ["City", "Urban", "Night"],
-      category: "Urban",
-      date: "2024-10-24",
-      location: "Hyderabad, India"
-    },
-    {
-        type: "image",
-        src: album.Durgaprasad3,
-        title: "Durgaprasad Professional Portrait",
-        tags: ["Professional", "Suit"],
-        category: "Portrait",
-        date: "2024-08-24",
-        location: "Novotel, india"
-      },
-    {
-      type: "image",
-      src: album.HyderabadDurgamCheruvuBrige,
-      title: "Hyderabad Durgam Cheruvu Bridge",
-      tags: ["Bridge", "Lake", "Cityscape"],
-      category: "Urban",
-      date: "2024-10-24",
-      location: "Hyderabad, India"
-    },
-    {
-        type: "image",
-        src: album.Durgaprasad2,
-        title: "Durgaprasad Professional AI Portrait",
-        tags: ["AI Generated", "Professional", "Suit"],
-        category: "Portrait",
-        date: "2025-06-17",
-        location: "AI Generated"
-      }
-      
-  ];
+  {
+    type: "image",
+    src: album.MyFirstFlight,
+    title: "My First Flight – Sky View",
+    tags: ["Sky", "Clouds", "Travel"],
+    category: "Travel",
+    date: "2023-04-30",
+    location: "Above the Clouds"
+  },
+
+  {
+    type: "image",
+    src: album.Durgaprasad1,
+    title: "Me in a Beach Vibe",
+    tags: ["Ocean", "Water", "Seascape"],
+    category: "Nature",
+    date: "2024-10-04",
+    location: "Vizag Beach, India"
+  },
+
+  {
+    type: "image",
+    src: album.Durgaprasad2,
+    title: "Durgaprasad Professional AI Portrait",
+    tags: ["AI Generated", "Professional", "Suit"],
+    category: "Portrait",
+    date: "2025-06-17",
+    location: "AI Generated"
+  },
+
+  {
+    type: "image",
+    src: album.Durgaprasad3,
+    title: "Durgaprasad Professional Portrait",
+    tags: ["Professional", "Suit"],
+    category: "Portrait",
+    date: "2024-08-24",
+    location: "Novotel, India"
+  },
+
+  {
+    type: "image",
+    src: album.HyderabadHitechCity,
+    title: "Hyderabad Modern View",
+    tags: ["City", "Urban", "Night"],
+    category: "Urban",
+    date: "2024-10-24",
+    location: "Hyderabad, India"
+  },
+
+  {
+    type: "image",
+    src: album.HyderabadDurgamCheruvuBrige,
+    title: "Hyderabad Durgam Cheruvu Bridge",
+    tags: ["Bridge", "Lake", "Cityscape"],
+    category: "Urban",
+    date: "2024-10-24",
+    location: "Hyderabad, India"
+  },
+
+  {
+    type: "image",
+    src: album.BeachViewPoint1,
+    title: "Beach View Point 1",
+    tags: ["Beach", "Ocean", "Travel"],
+    category: "Nature",
+    date: "2024-05-12",
+    location: "Beach Side, India"
+  },
+
+  {
+    type: "image",
+    src: album.BeachViewPoint2,
+    title: "Beach View Point 2",
+    tags: ["Sunset", "Beach", "Sea"],
+    category: "Nature",
+    date: "2024-05-12",
+    location: "Beach Side, India"
+  },
+
+  {
+    type: "image",
+    src: album.BeachViewPoint3,
+    title: "Beach View Point 3",
+    tags: ["Waves", "Nature", "Travel"],
+    category: "Nature",
+    date: "2024-05-12",
+    location: "Beach Side, India"
+  },
+
+  {
+    type: "image",
+    src: album.BhukailasaCaveMuseum,
+    title: "Bhukailasa Cave Museum",
+    tags: ["Museum", "History", "Culture"],
+    category: "Historical",
+    date: "2024-06-10",
+    location: "Karnataka, India"
+  },
+
+  {
+    type: "image",
+    src: album.DurgaInBeach,
+    title: "Durga in Beach",
+    tags: ["Beach", "Portrait", "Travel"],
+    category: "Portrait",
+    date: "2024-07-18",
+    location: "Beach, India"
+  },
+
+  {
+    type: "image",
+    src: album.SharavathiKandlaMangroveBoardwalk,
+    title: "Sharavathi Kandla Mangrove Boardwalk",
+    tags: ["Mangrove", "Nature", "Forest"],
+    category: "Nature",
+    date: "2024-08-08",
+    location: "Karnataka, India"
+  },
+
+  {
+    type: "image",
+    src: album.ShivInStMaryIsland,
+    title: "Shiv in St. Mary Island",
+    tags: ["Island", "Travel", "Nature"],
+    category: "Travel",
+    date: "2024-08-15",
+    location: "St. Mary Island, India"
+  },
+
+  {
+    type: "image",
+    src: album.ShriMurudeshwaraShivaTemple,
+    title: "Shri Murudeshwara Shiva Temple",
+    tags: ["Temple", "Spiritual", "Architecture"],
+    category: "Spiritual",
+    date: "2024-08-20",
+    location: "Murudeshwara, Karnataka"
+  },
+
+  {
+    type: "video",
+    src: album.ShriMurudeshwaraShivaNightEvent,
+    thumbnail: album.ShriMurudeshwaraShivaTemple,
+    title: "Shri Murudeshwara Shiva Night Event",
+    tags: ["Festival", "Night", "Temple"],
+    category: "Event",
+    date: "2024-08-20",
+    location: "Murudeshwara, Karnataka"
+  }
+];
+
   
 
 export default function Albums() {
