@@ -21,7 +21,8 @@ const AboutSection = () => {
 
         workExperience() {
           return [
-            { "03/11/2025-present": "Infosys Ltd (Campus Placement)" },
+            { "offer letter(OL) accepted": "Tata Consultancy Services (TCS) - Digital role" },
+            { "03/11/2025-present": "Infosys Ltd (Campus Placement) - System Engineer role" },
             { "05/08/2024-23/11/2024": "Full-stack Developer(MERN STACK)/Intern at BrainOVision" }
           ];
         }
@@ -29,9 +30,9 @@ const AboutSection = () => {
         skills() {
           return [
             "C", "Python", "Java",
-            "HTML", "CSS", "Java Script", "React JS","Angular",
-            ".NET", "Node Js", "Mongo DB", "Express JS",
-            "PhotoShop", "PremierePro", "github"
+            "HTML", "CSS", "Java Script", "Type Script", "React.js", "Angular.js", "Next.js",
+            ".NET", "Node.js", "Mongo DB", "Express.js", "SQL",
+            "PhotoShop", "PremierePro", "github", "Splunk"
           ];
         }
       }
@@ -142,7 +143,9 @@ const AboutSection = () => {
   <br />
   {'        '}<span className="keyword">return</span> [
   <br />
-  {'            '}{'{'} "03/11/2025-present": "<span className="string">Infosys Ltd (Campus Placement)</span>" {'}'}
+  {'            '}{'{'} "offer letter(OL) accepted": "<span className="string">Tata Consultancy Services (TCS) - Digital role</span>" {'}'}
+  <br />
+  {'            '}{'{'} "03/11/2025-present": "<span className="string">Infosys Ltd (Campus Placement) - System Engineer role</span>" {'}'}
   <br />
   {'            '}{'{'} "05/08/2024-23/11/2024": "<span className="string">Full-stack Developer(MERN STACK)/Intern at BrainOVision</span>" {'},'}
   <br />
@@ -155,9 +158,9 @@ const AboutSection = () => {
   {'        '}<span className="keyword">return</span> [
   <br />
   {'            '}"C", "Python", "Java",<br />
-  {'            '}"HTML", "CSS", "Java Script", "React JS", "Angular"<br />
-  {'            '}".NET", "Node Js", "Mongo DB", "Express JS",<br />
-  {'            '}"PhotoShop", "PremierePro", "github"
+  {'            '}"HTML", "CSS", "Java Script", "Type Script", "React.js", "Angular.js", "Next.js"<br />
+  {'            '}".NET", "Node.js", "Mongo DB", "Express.js", "SQL"<br />
+  {'            '}"PhotoShop", "PremierePro", "github", "Splunk"
   <br />
   {'        '}];
   <br />

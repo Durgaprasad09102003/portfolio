@@ -8,10 +8,11 @@ const skillsData = [
     skills: [
       { name: "HTML", level: "advanced" },
       { name: "CSS", level: "advanced" },
-      { name: "JavaScript", level: "advanced" },
-      { name: "React", level: "intermediate" },
-      { name: "Angular", level: "intermediate" },
       { name: "Tailwind CSS", level: "intermediate" },
+      { name: "JavaScript", level: "advanced" },
+      { name: "React", level: "advanced" },
+      { name: "Angular", level: "intermediate" },
+      { name: "next.js", level: "intermediate" },
     ],
   },
   {
@@ -26,15 +27,25 @@ const skillsData = [
   {
     category: "Programming Languages",
     skills: [
-      { name: "JavaScript", level: "advanced" },
+      { name: "JavaScript", level: "intermediate" },
+      { name: "TypeScript", level: "intermediate" },
+      { name: "Java", level: "intermediate" },
       { name: "Python", level: "intermediate" },
-      { name: "C", level: "beginner" },
+      { name: "C", level: "intermediate" },
+    ],
+  },
+  {
+    category: "Databases",
+    skills: [
+      { name: "SQL", level: "intermediate" },
+      { name: "MongoDB", level: "intermediate" },
     ],
   },
   {
     category: "Tools",
     skills: [
       { name: "Git", level: "intermediate" },
+      { name: "Splunk", level: "intermediate" },
       { name: "GitHub", level: "intermediate" },
       { name: "VS Code", level: "advanced" },
       { name: "Postman", level: "intermediate" },
