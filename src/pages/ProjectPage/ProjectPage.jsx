@@ -44,7 +44,15 @@ const ProjectPage = () => {
   const [loading, setLoading] = useState(true);
   const projectsData = [
     {
-      title: "#2026 Dream Project(WanderTrek) ",
+      title: "DPMANGA – Where Stories Come Alive",
+      description: "Welcome to DPMANGA – where imagination meets storytelling. Explore captivating manga, unforgettable characters, and adventures beyond imagination. Read. Imagine. Experience.",
+      tags: ["next.js"],
+      githubLink: "https://github.com/Durgaprasad09102003/DPMANGA",
+      demoLink: "#",
+      image: assets.DPMANGA,
+    },
+    {
+      title: "#2028 Dream Project(WanderTrek) ",
       description: "WanderTrek is a MERN stack travel website in progress, designed with multiple features to make trip planning seamless and engaging.",
       tags: ["MERN STACK"],
       githubLink: "#",

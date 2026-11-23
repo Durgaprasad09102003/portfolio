@@ -6,7 +6,7 @@ const StatsSection = () => {
   const sectionRef = useRef(null);
   
   const stats = [
-    { number: 6, label: 'Projects Completed' },
+    { number: 7, label: 'Projects Completed' },
     { number: '500+', label: 'Linkedin Followers' },
     { number: '1+', label: 'Years Experience' },
     { number: '100+', label: 'Cups of Coffee ☕' },

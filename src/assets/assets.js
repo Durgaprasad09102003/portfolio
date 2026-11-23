@@ -8,6 +8,7 @@ import OTTMovieSystem from './images/OTTMovieSystem.png';
 import OldPortfolio from './images/OldPortfolio.png';
 import ATMCardPortfolio from './images/ATMCardPortfolio.png';
 import CurrencyConverterProject from './images/CurrencyConverterProject.png';
+import DPMANGA from './images/DPMANGA.png';
 
 import Resume from './doc/DURGAPRASAD PILLI.pdf'
 
@@ -23,7 +24,8 @@ const assets = {
   OTTMovieSystem,
   OldPortfolio,
   ATMCardPortfolio,
-  CurrencyConverterProject
+  CurrencyConverterProject,
+  DPMANGA
 };
 
 export default assets;
